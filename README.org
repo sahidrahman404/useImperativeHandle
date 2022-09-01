@@ -1,6 +1,4 @@
-#+title: useImperativeHandle
-
-** useImperativeHandle Implementation in Typescript
+#+title: useImperativeHandle Implementation in Typescript
 
 #+begin_src tsx
 // useImperativeHandle: scroll to top/bottom
