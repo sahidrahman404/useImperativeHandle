@@ -47,9 +47,9 @@ const MessagesDisplay = forwardRef(
     }
 
     return (
-      <ol ref={containerRef} role="log">
+      <ol ref={containerRef} role="log" className="log">
         {messages.map((message) => (
-          <li key={message.id}>
+          <li key={message.id} className="message">
             <strong>{message.author}</strong>: <span>{message.content}</span>
           </li>
         ))}
@@ -83,11 +83,10 @@ function App() {
 
   return (
     <div className="messaging-app">
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="buttons">
         <button onClick={addMessage}>add message</button>
         <button onClick={removeMessage}>remove message</button>
       </div>
-      <hr />
       <div>
         <button onClick={scrollToTop}>scroll to top</button>
       </div>
